@@ -72,7 +72,6 @@ The simplest way to run this application is by using Docker Compose. It will bui
 1. **Clone the repository** (if you haven't already):
    ```bash
    git clone https://github.com/Israk-ML-1999/Grocery-Product-Detection-Fine-Tuning-use-YOLOv8n.git
-   cd Grocery-Product-Detection-Fine-Tuning-use-YOLOv8n
    ```
 
 2. **Build and start the containers**:
@@ -150,12 +149,13 @@ FastAPI automatically generates an interactive UI where you can test the endpoin
 ├── app/
 │   └── service/
 │       └── product_detect/
-│           ├── model.py       # Manages the loading of the YOLOv8 model
-│           ├── router.py      # Contains the FastAPI routing and inference logic
-│           └── schema.py      # Defines the Pydantic schemas for data validation
+│           ├── model.py       
+│           ├── router.py      
+│           └── schema.py      
 ├── nginx/
-│   └── nginx.conf             # Nginx reverse proxy configuration
-├── Dockerfile                 # Configuration for containerizing the FastAPI app
-├── docker-compose.yml         # Docker Compose orchestration
-└── requirements.txt           # Python dependencies needed for the project
+│   └── nginx.conf             
+├── Dockerfile                 
+├── docker-compose.yml
+├── main.py        
+└── requirements.txt
 ```
