@@ -153,7 +153,9 @@ FastAPI automatically generates an interactive UI where you can test the endpoin
 │           ├── router.py      
 │           └── schema.py      
 ├── nginx/
-│   └── nginx.conf             
+│   └── nginx.conf
+├── model/
+│   └── best.pt             
 ├── Dockerfile                 
 ├── docker-compose.yml
 ├── main.py        
