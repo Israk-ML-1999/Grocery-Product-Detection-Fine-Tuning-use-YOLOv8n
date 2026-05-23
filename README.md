@@ -84,6 +84,7 @@ The simplest way to run this application is by using Docker Compose. It will bui
 3. **Access the application**:
    - The API will be accessible via Nginx at `http://localhost:8088`.
    - The interactive API documentation (Swagger UI) is at `http://localhost:8088/docs`.
+     **Live API Endpoint**: `http://31.97.146.169:8088/docs`
 
 To stop the containers, use:
 ```bash
