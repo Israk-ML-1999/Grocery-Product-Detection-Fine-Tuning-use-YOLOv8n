@@ -51,6 +51,7 @@ This project is a FastAPI-based backend application that utilizes a fine-tuned *
 2. **Low number of epochs** (25) – the model has not fully converged.
 3. **Free GPU constraints** – prevented training with larger batch sizes, higher resolution (e.g., 640×640), or longer training.
 4. **Fixed 416×416 input** – some fine details (e.g., small text on labels) may be lost compared to 640×640.
+5. **Geographic/brand variation** – Product packaging (brand names, labels, colors, layouts) varies significantly across countries and regions. Our model was trained on a generic global dataset; it may not perform well on products from a specific country (e.g., Bangladesh, India, UK) unless fine‑tuned with region‑specific data. For example, a “rice” packet in Bangladesh looks very different from one in the USA. To achieve robust detection for a target market, the model needs domain‑adapted data from that region.
 
 ### How to Achieve Better Results
 - ✅ **Increase epochs to 100–150** – the loss curves were still decreasing at epoch 25.
